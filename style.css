@@ -1,0 +1,245 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  color: white;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background: rgb(46, 44, 59);
+}
+
+/* ===============to hide the scrollbar if the content  exceedd=========================================================== */
+html{
+overflow: hidden;
+}
+
+/* Borderon hover */
+.border {
+  border: none;
+}
+.border:hover {
+  border: 2.5px solid rgb(255, 238, 238);
+}
+/* Borderon hover */
+
+
+/* Background iamge */
+/* .back {
+  position: absolute;
+  height: 100vh;
+  width: 100vh;
+  background-color: red;
+} */
+.backimg{
+  position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: blur(1px);
+}
+
+/* ------------------------------Profie-------------------------------------------------------------------- */
+
+.Profile {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 2rem;
+  height: 10rem;
+  width: 100%;
+  /* background-color: blueviolet; */
+}
+
+.imagediv {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+}
+
+.imagediv img {
+  position: absolute;
+  top: -1.2rem;
+  height: 150%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.infowrap {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 10rem;
+  width: 40%;
+  background-color: rgba(255, 255, 255, 0.13);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+  margin-top: 2rem;
+  border-radius: 2rem;
+  padding: 0rem 10rem;
+}
+p {
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+}
+
+/* =====================================================3boxes Dasboard================================================== */
+h2 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+.Dasboard {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 20rem;
+  width: 100%;
+  margin-top: 2.5rem;
+  /* background-color: blanchedalmond; */
+}
+
+.Dasboard i {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #9effc8;
+}
+.withdrawBalance i {
+  color: #ffadad;
+}
+.TotalBalance i {
+  color: #67c7ff;
+}
+
+.Deposite {
+  width: 25rem;
+  height: 12rem;
+  /* background-color: aquamarine; */
+  background-color: rgba(255, 255, 255, 0.13);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+  border-radius: 3.5rem;
+  text-align: center;
+  padding: 1rem 1rem;
+  position: relative;
+}
+
+.Withdraw {
+  width: 25rem;
+  height: 12rem;
+  /* background-color: rgb(255, 255, 255); */
+  background-color: rgba(255, 255, 255, 0.13);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+  border-radius: 3.5rem;
+  text-align: center;
+  padding: 1rem 1rem;
+  position: relative;
+}
+
+.Balance {
+  width: 25rem;
+  height: 12rem;
+  /* background-color: rgb(0, 0, 0);     */
+  background-color: rgba(255, 255, 255, 0.13);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+  border-radius: 3.5rem;
+  text-align: center;
+  padding: 1rem 1rem;
+  position: relative;
+}
+
+.TotalBalance,
+.withdrawBalance,
+.DepositeBalance {
+  position: absolute;
+  top: 5rem;
+  left: 3rem;
+  font-size: 4rem;
+}
+
+/*  ===================================2Boxes Inputsection======================================================================*/
+.InputSection {
+  /* background-color: aqua; */
+  height: 12rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.Depositeinput {
+  padding: 2rem 1.5rem;
+  width: 25rem;
+  height: 11rem;
+  background-color: rgba(255, 255, 255, 0.13);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+  border-radius: 2rem;
+  line-height: 2.5rem;
+  margin-left: 18rem;
+  text-align: center;
+}
+
+.Withdrawinput {
+  padding: 2rem 1.5rem;
+  width: 25rem;
+  height: 11rem;
+  background-color: rgba(255, 255, 255, 0.13);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+  border-radius: 2rem;
+  line-height: 2.5rem;
+  margin-left: 9rem;
+  text-align: center;
+}
+
+.Depositeinput input,
+.Withdrawinput input {
+  width: 20rem;
+  height: 1.8rem;
+  border-radius: 0.6rem;
+  margin-right: 10rem;
+  margin-left: 1rem;
+  background-color: rgba(255, 255, 255, 0.13);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0);
+  padding-left: 0.5rem;
+}
+.Depositeinput type,
+.Withdrawinput type {
+  color: red;
+}
+
+.Depositeinput h3,
+.Withdrawinput h3 {
+  font-size: 1.5rem;
+}
+
+.btn1,
+.btn2 {
+  margin: 1rem 8rem;
+  padding: 0.3rem 1rem;
+  border-radius: 0.3rem;
+  background-color: rgba(255, 255, 255, 0.27);
+  border: none;
+  color: rgb(255, 240, 240);
+}
+
+/*------------------------------------------------------ Hiding The MainDashBoard ------------------------------------------------------*/
+.DashboardWrap {
+    position: relative;
+  display: none;
+}
