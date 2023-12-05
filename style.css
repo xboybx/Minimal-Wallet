@@ -238,6 +238,18 @@ h2 {
   color: rgb(255, 240, 240);
 }
 
+
+
+/* ====================================Removing the up and down selction arrows of input section============================== */
+input[type="number"]::-webkit-inner-spin-button {
+  display: none;
+}
+
+/* for mozilla browser */
+ input[type="number"] {
+  -moz-appearance: textfield;
+} 
+
 /*------------------------------------------------------ Hiding The MainDashBoard ------------------------------------------------------*/
 .DashboardWrap {
     position: relative;
