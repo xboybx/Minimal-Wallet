@@ -11,12 +11,12 @@ let Fulldashboard = document.querySelector('.DashboardWrap');
 
 
 // Removing the Login page after clicking Submit
-LoginBtn.addEventListener('click', () => {
-    loginarea.style.display = 'none';
-    Fulldashboard.classList.remove("DashboardWrap");
- console.log("LoggedIn");
+// LoginBtn.addEventListener('click', () => {
+//     loginarea.style.display = 'none';
+//     Fulldashboard.classList.remove("DashboardWrap");
+//  console.log("LoggedIn");
 
-})
+// })
 
 
 
