@@ -1,20 +1,24 @@
 * {
   margin: 0px;
   padding: 0px;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   color: white;
 }
 
-html,
+
 body {
-  width: 100%;
-  height: 100%;
+
   background: rgb(46, 44, 59);
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 /* ===============to hide the scrollbar if the content  exceedd=========================================================== */
 html {
-  overflow: visible;
+  overflow: scroll;
 }
 
 
@@ -27,7 +31,11 @@ html {
 
 
 .Profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   border-radius: 2rem;
   padding: 3.5rem;
@@ -53,19 +61,28 @@ html {
   position: absolute;
   max-height: 150%;
   max-width: 100%;
+  -o-object-fit: cover;
   object-fit: cover;
+  -o-object-position: center;
   object-position: center;
   /* border: 10px solid rgb(30, 255, 0); */
 
 }
 
 .infowrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-color: rgba(255, 255, 255, 0.13);
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   border: 2px solid rgba(255, 255, 255, 0.1);
+  -webkit-box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
   box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
   border-radius: 2rem;
   padding: 5.5% 18%;
@@ -83,13 +100,17 @@ p {
 /* =====================================================3boxes Dasboard================================================== */
 h2 {
   font-size: 2em;
-  font-weight: 500;
-  padding: 0.10em;
+  padding-bottom: 0.50em;
 }
 
 .Dasboard {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   margin-top: auto;
   /* border: 3px red solid; */
@@ -115,8 +136,10 @@ h2 {
 .Deposite {
   width: 34%;
   background-color: rgba(255, 255, 255, 0.13);
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   border: 2px solid rgba(255, 255, 255, 0.1);
+  -webkit-box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
   box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
   border-radius: 3.5rem;
   text-align: center;
@@ -128,8 +151,10 @@ h2 {
 .Withdraw {
   width: 34%;
   background-color: rgba(255, 255, 255, 0.13);
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   border: 2px solid rgba(255, 255, 255, 0.1);
+  -webkit-box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
   box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
   border-radius: 3.5rem;
   text-align: center;
@@ -140,8 +165,10 @@ h2 {
 .Balance {
   width: 34%;
   background-color: rgba(255, 255, 255, 0.13);
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   border: 2px solid rgba(255, 255, 255, 0.1);
+  -webkit-box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
   box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
   border-radius: 3.5rem;
   text-align: center;
@@ -153,16 +180,20 @@ h2 {
 .TotalBalance,
 .withdrawBalance,
 .DepositeBalance {
-  font-size: 2em;
-  padding: 0.05em;
+  font-size: 1.8em;
+  /* padding: 0.05em; */
 }
 
 
 /*  ===================================2Boxes Inputsection======================================================================*/
 .InputSection {
-
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   margin-top: auto;
   /* border: 3px red solid; */
@@ -173,11 +204,12 @@ h2 {
 
 .Depositeinput {
   padding: 2rem 2.5rem;
-
   width: 100%;
   background-color: rgba(255, 255, 255, 0.13);
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   border: 2px solid rgba(255, 255, 255, 0.1);
+  -webkit-box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
   box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
   border-radius: 2rem;
   line-height: 2.5rem;
@@ -189,8 +221,10 @@ h2 {
   padding: 2rem 2.5rem;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.13);
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   border: 2px solid rgba(255, 255, 255, 0.1);
+  -webkit-box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
   box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
   border-radius: 2rem;
   line-height: 2.5rem;
@@ -201,9 +235,10 @@ h2 {
 .Depositeinput input,
 .Withdrawinput input {
   width: 100%;
-  padding: 0.50em 0.50em;
+  padding: 0.50em 2em;
   border-radius: 0.6rem;
   background-color: rgba(255, 255, 255, 0.13);
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   border: 2px solid rgba(255, 255, 255, 0);
   /* border: 2px solid rgb(211, 3, 166) */
@@ -238,8 +273,37 @@ input[type="number"] {
   -moz-appearance: textfield;
 }
 
-/*------------------------------------------------------ Hiding The MainDashBoard ------------------------------------------------------*/
-/* .DashboardWrap {
-  position: relative;
-  display: none;
-} */
+
+/* ---------------------------------------MEDIA QUERIES__________________________________________________________________________ */
+
+@media (max-width:650px) {
+  .Dasboard {
+    display: block;
+    padding-top: 0.5rem;
+  }
+
+  .Deposite {
+    width: 100%;
+    margin: 1rem auto;
+  }
+
+  .Withdraw,
+  .Balance {
+    width: 100%;
+    margin: 1rem auto;
+  }
+}
+
+@media(max-width:410px) {
+
+  .InputSection {
+    display: block;
+    padding: 1rem auto;
+  }
+
+  .Depositeinput,
+  .Withdrawinput {
+
+    margin: 1rem auto;
+  }
+}
